@@ -773,4 +773,10 @@ exports.resolve = urlResolve;
 exports.resolveObject = urlResolveObject;
 exports.format = urlFormat;
 
+function fileURLToPath(url) {
+  return String(url);
+}
+
+exports.fileURLToPath = fileURLToPath;
+
 exports.Url = Url;
